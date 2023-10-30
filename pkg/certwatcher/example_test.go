@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"time"
 
+	ctrl "github.com/rmanijacob/controller-runtime"
 	"github.com/rmanijacob/controller-runtime/pkg/certwatcher"
-	ctrl "sigs.k8s.io/controller-runtime"
 )
 
 type sampleServer struct {

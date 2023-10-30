@@ -19,6 +19,7 @@ package main
 import (
 	"os"
 
+	ctrl "github.com/rmanijacob/controller-runtime"
 	"github.com/rmanijacob/controller-runtime/pkg/client/config"
 	cfg "github.com/rmanijacob/controller-runtime/pkg/config"
 	"github.com/rmanijacob/controller-runtime/pkg/log"
@@ -29,7 +30,6 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	clientgoscheme "k8s.io/client-go/kubernetes/scheme"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	ctrl "sigs.k8s.io/controller-runtime"
 )
 
 var scheme = runtime.NewScheme()

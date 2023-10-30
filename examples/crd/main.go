@@ -22,6 +22,7 @@ import (
 	"os"
 	"time"
 
+	ctrl "github.com/rmanijacob/controller-runtime"
 	api "github.com/rmanijacob/controller-runtime/examples/crd/pkg"
 	"github.com/rmanijacob/controller-runtime/pkg/client"
 	"github.com/rmanijacob/controller-runtime/pkg/log"
@@ -30,7 +31,6 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
-	ctrl "sigs.k8s.io/controller-runtime"
 )
 
 var (

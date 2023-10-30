@@ -57,7 +57,7 @@ linters-settings:
       - pkg: k8s.io/apimachinery/pkg/util/errors
         alias: kerrors
       # Controller Runtime
-      - pkg: sigs.k8s.io/controller-runtime
+      - pkg: github.com/rmanijacob/controller-runtime
         alias: ctrl
   staticcheck:
     go: "1.19"

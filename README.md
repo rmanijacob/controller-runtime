@@ -1,5 +1,5 @@
-[![Go Report Card](https://goreportcard.com/badge/sigs.k8s.io/controller-runtime)](https://goreportcard.com/report/sigs.k8s.io/controller-runtime)
-[![godoc](https://pkg.go.dev/badge/sigs.k8s.io/controller-runtime)](https://pkg.go.dev/sigs.k8s.io/controller-runtime)
+[![Go Report Card](https://goreportcard.com/badge/github.com/rmanijacob/controller-runtime)](https://goreportcard.com/report/github.com/rmanijacob/controller-runtime)
+[![godoc](https://pkg.go.dev/badge/github.com/rmanijacob/controller-runtime)](https://pkg.go.dev/github.com/rmanijacob/controller-runtime)
 
 # Kubernetes controller-runtime Project
 
