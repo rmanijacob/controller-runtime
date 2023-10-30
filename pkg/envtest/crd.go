@@ -41,8 +41,8 @@ import (
 	"k8s.io/utils/pointer"
 	"sigs.k8s.io/yaml"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/webhook/conversion"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/webhook/conversion"
 )
 
 // CRDInstallOptions are the options for installing CRDs.

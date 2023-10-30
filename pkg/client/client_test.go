@@ -34,8 +34,8 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	kscheme "k8s.io/client-go/kubernetes/scheme"
 
-	"sigs.k8s.io/controller-runtime/examples/crd/pkg"
-	"sigs.k8s.io/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/examples/crd/pkg"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
 )
 
 const serverSideTimeoutSeconds = 10

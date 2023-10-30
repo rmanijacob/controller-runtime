@@ -21,9 +21,9 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/rmanijacob/controller-runtime/pkg/internal/testing/certs"
+	"github.com/rmanijacob/controller-runtime/pkg/internal/testing/process"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/certs"
-	"sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
 )
 
 // User represents a Kubernetes user.

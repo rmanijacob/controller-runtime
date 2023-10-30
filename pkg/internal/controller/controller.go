@@ -24,16 +24,16 @@ import (
 	"time"
 
 	"github.com/go-logr/logr"
+	"github.com/rmanijacob/controller-runtime/pkg/handler"
+	ctrlmetrics "github.com/rmanijacob/controller-runtime/pkg/internal/controller/metrics"
+	logf "github.com/rmanijacob/controller-runtime/pkg/log"
+	"github.com/rmanijacob/controller-runtime/pkg/predicate"
+	"github.com/rmanijacob/controller-runtime/pkg/reconcile"
+	"github.com/rmanijacob/controller-runtime/pkg/runtime/inject"
+	"github.com/rmanijacob/controller-runtime/pkg/source"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/uuid"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	ctrlmetrics "sigs.k8s.io/controller-runtime/pkg/internal/controller/metrics"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/source"
 )
 
 var _ inject.Injector = &Controller{}

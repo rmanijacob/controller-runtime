@@ -8,8 +8,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	fakeclient "sigs.k8s.io/controller-runtime/pkg/client/fake"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	fakeclient "github.com/rmanijacob/controller-runtime/pkg/client/fake"
 )
 
 func exampleDeployment() *appsv1.Deployment {

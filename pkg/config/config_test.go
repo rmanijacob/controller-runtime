@@ -19,8 +19,8 @@ package config_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"sigs.k8s.io/controller-runtime/pkg/config"
-	"sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
+	"github.com/rmanijacob/controller-runtime/pkg/config"
+	"github.com/rmanijacob/controller-runtime/pkg/config/v1alpha1"
 )
 
 var _ = Describe("config", func() {

@@ -1,4 +1,4 @@
-module sigs.k8s.io/controller-runtime/examples/scratch-env
+module github.com/rmanijacob/controller-runtime/examples/scratch-env
 
 go 1.15
 

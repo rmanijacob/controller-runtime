@@ -19,6 +19,12 @@ package handler_test
 import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/client/apiutil"
+	"github.com/rmanijacob/controller-runtime/pkg/controller/controllertest"
+	"github.com/rmanijacob/controller-runtime/pkg/event"
+	"github.com/rmanijacob/controller-runtime/pkg/handler"
+	"github.com/rmanijacob/controller-runtime/pkg/reconcile"
 	appsv1 "k8s.io/api/apps/v1"
 	autoscalingv1 "k8s.io/api/autoscaling/v1"
 	corev1 "k8s.io/api/core/v1"
@@ -27,12 +33,6 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
-	"sigs.k8s.io/controller-runtime/pkg/controller/controllertest"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	"sigs.k8s.io/controller-runtime/pkg/reconcile"
 )
 
 var _ = Describe("Eventhandler", func() {

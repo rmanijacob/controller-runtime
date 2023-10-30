@@ -21,7 +21,7 @@ import (
 	. "github.com/onsi/ginkgo/extensions/table"
 	. "github.com/onsi/gomega"
 
-	. "sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
+	. "github.com/rmanijacob/controller-runtime/tools/setup-envtest/versions"
 )
 
 func patchSel(x, y int, z PointVersion) PatchSelector {

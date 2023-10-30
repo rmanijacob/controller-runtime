@@ -22,12 +22,12 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/rmanijacob/controller-runtime/pkg/cache"
+	"github.com/rmanijacob/controller-runtime/pkg/cache/informertest"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/client/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/cache/informertest"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/client/fake"
 )
 
 var instance *testSource

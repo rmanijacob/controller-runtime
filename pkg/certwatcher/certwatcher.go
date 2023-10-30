@@ -22,8 +22,8 @@ import (
 	"sync"
 
 	"github.com/fsnotify/fsnotify"
-	"sigs.k8s.io/controller-runtime/pkg/certwatcher/metrics"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
+	"github.com/rmanijacob/controller-runtime/pkg/certwatcher/metrics"
+	logf "github.com/rmanijacob/controller-runtime/pkg/internal/log"
 )
 
 var log = logf.RuntimeLog.WithName("certwatcher")

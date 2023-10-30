@@ -21,12 +21,12 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"github.com/rmanijacob/controller-runtime/pkg/envtest"
+	"github.com/rmanijacob/controller-runtime/pkg/envtest/printer"
+	logf "github.com/rmanijacob/controller-runtime/pkg/log"
+	"github.com/rmanijacob/controller-runtime/pkg/log/zap"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 )
 
 func TestRecorder(t *testing.T) {

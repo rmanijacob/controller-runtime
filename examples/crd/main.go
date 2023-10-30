@@ -22,15 +22,15 @@ import (
 	"os"
 	"time"
 
+	api "github.com/rmanijacob/controller-runtime/examples/crd/pkg"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/log"
+	"github.com/rmanijacob/controller-runtime/pkg/log/zap"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	ctrl "sigs.k8s.io/controller-runtime"
-	api "sigs.k8s.io/controller-runtime/examples/crd/pkg"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 )
 
 var (

@@ -26,10 +26,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/rest"
 
-	"sigs.k8s.io/controller-runtime/pkg/envtest"
-	"sigs.k8s.io/controller-runtime/pkg/envtest/printer"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/log/zap"
+	"github.com/rmanijacob/controller-runtime/pkg/envtest"
+	"github.com/rmanijacob/controller-runtime/pkg/envtest/printer"
+	logf "github.com/rmanijacob/controller-runtime/pkg/log"
+	"github.com/rmanijacob/controller-runtime/pkg/log/zap"
 )
 
 func TestSource(t *testing.T) {

@@ -1,10 +1,10 @@
 package internal
 
 import (
+	"github.com/rmanijacob/controller-runtime/pkg/client/apiutil"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/tools/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client/apiutil"
 )
 
 // TransformFuncByObject provides access to the correct transform function for

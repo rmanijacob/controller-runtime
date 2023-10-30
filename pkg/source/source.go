@@ -23,19 +23,19 @@ import (
 	"sync"
 	"time"
 
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/event"
+	"github.com/rmanijacob/controller-runtime/pkg/handler"
+	logf "github.com/rmanijacob/controller-runtime/pkg/internal/log"
+	"github.com/rmanijacob/controller-runtime/pkg/runtime/inject"
+	"github.com/rmanijacob/controller-runtime/pkg/source/internal"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/util/workqueue"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/event"
-	"sigs.k8s.io/controller-runtime/pkg/handler"
-	logf "sigs.k8s.io/controller-runtime/pkg/internal/log"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/source/internal"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/predicate"
+	"github.com/rmanijacob/controller-runtime/pkg/cache"
+	"github.com/rmanijacob/controller-runtime/pkg/predicate"
 )
 
 var log = logf.RuntimeLog.WithName("source")

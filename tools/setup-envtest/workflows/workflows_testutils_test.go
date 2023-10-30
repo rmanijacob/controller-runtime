@@ -18,7 +18,7 @@ import (
 	"github.com/onsi/gomega/ghttp"
 	"github.com/spf13/afero"
 
-	"sigs.k8s.io/controller-runtime/tools/setup-envtest/versions"
+	"github.com/rmanijacob/controller-runtime/tools/setup-envtest/versions"
 )
 
 var (

@@ -20,12 +20,12 @@ import (
 	"context"
 	"os"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client/config"
-	conf "sigs.k8s.io/controller-runtime/pkg/config"
-	logf "sigs.k8s.io/controller-runtime/pkg/log"
-	"sigs.k8s.io/controller-runtime/pkg/manager"
-	"sigs.k8s.io/controller-runtime/pkg/manager/signals"
+	"github.com/rmanijacob/controller-runtime/pkg/cache"
+	"github.com/rmanijacob/controller-runtime/pkg/client/config"
+	conf "github.com/rmanijacob/controller-runtime/pkg/config"
+	logf "github.com/rmanijacob/controller-runtime/pkg/log"
+	"github.com/rmanijacob/controller-runtime/pkg/manager"
+	"github.com/rmanijacob/controller-runtime/pkg/manager/signals"
 )
 
 var (

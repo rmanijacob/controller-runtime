@@ -12,10 +12,10 @@ see how it can be used.
 
 Documentation:
 
-- [Package overview](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg)
-- [Basic controller using builder](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/builder#example-Builder)
-- [Creating a manager](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/manager#example-New)
-- [Creating a controller](https://pkg.go.dev/sigs.k8s.io/controller-runtime/pkg/controller#example-New)
+- [Package overview](https://pkg.go.dev/github.com/rmanijacob/controller-runtime/pkg)
+- [Basic controller using builder](https://pkg.go.dev/github.com/rmanijacob/controller-runtime/pkg/builder#example-Builder)
+- [Creating a manager](https://pkg.go.dev/github.com/rmanijacob/controller-runtime/pkg/manager#example-New)
+- [Creating a controller](https://pkg.go.dev/github.com/rmanijacob/controller-runtime/pkg/controller#example-New)
 - [Examples](https://github.com/kubernetes-sigs/controller-runtime/blob/master/examples)
 - [Designs](https://github.com/kubernetes-sigs/controller-runtime/blob/master/designs)
 

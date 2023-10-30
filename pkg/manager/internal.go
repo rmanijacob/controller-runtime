@@ -38,16 +38,16 @@ import (
 	"k8s.io/client-go/tools/leaderelection/resourcelock"
 	"k8s.io/client-go/tools/record"
 
-	"sigs.k8s.io/controller-runtime/pkg/cache"
-	"sigs.k8s.io/controller-runtime/pkg/client"
-	"sigs.k8s.io/controller-runtime/pkg/cluster"
-	"sigs.k8s.io/controller-runtime/pkg/config/v1alpha1"
-	"sigs.k8s.io/controller-runtime/pkg/healthz"
-	"sigs.k8s.io/controller-runtime/pkg/internal/httpserver"
-	intrec "sigs.k8s.io/controller-runtime/pkg/internal/recorder"
-	"sigs.k8s.io/controller-runtime/pkg/metrics"
-	"sigs.k8s.io/controller-runtime/pkg/runtime/inject"
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
+	"github.com/rmanijacob/controller-runtime/pkg/cache"
+	"github.com/rmanijacob/controller-runtime/pkg/client"
+	"github.com/rmanijacob/controller-runtime/pkg/cluster"
+	"github.com/rmanijacob/controller-runtime/pkg/config/v1alpha1"
+	"github.com/rmanijacob/controller-runtime/pkg/healthz"
+	"github.com/rmanijacob/controller-runtime/pkg/internal/httpserver"
+	intrec "github.com/rmanijacob/controller-runtime/pkg/internal/recorder"
+	"github.com/rmanijacob/controller-runtime/pkg/metrics"
+	"github.com/rmanijacob/controller-runtime/pkg/runtime/inject"
+	"github.com/rmanijacob/controller-runtime/pkg/webhook"
 )
 
 const (

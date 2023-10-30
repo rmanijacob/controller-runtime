@@ -23,7 +23,7 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	. "sigs.k8s.io/controller-runtime/pkg/internal/testing/process"
+	. "github.com/rmanijacob/controller-runtime/pkg/internal/testing/process"
 )
 
 var _ = Describe("Arguments Templates", func() {

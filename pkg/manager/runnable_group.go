@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"sigs.k8s.io/controller-runtime/pkg/webhook"
+	"github.com/rmanijacob/controller-runtime/pkg/webhook"
 )
 
 var (
