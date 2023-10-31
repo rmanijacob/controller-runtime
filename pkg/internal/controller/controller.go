@@ -222,18 +222,18 @@ func (c *Controller) Start(ctx context.Context) error {
 		// We should never hold watches more than necessary, each watch source can hold a backing cache,
 		// which won't be garbage collected if we hold a reference to it.
 		c.startWatches = nil
-
+		c.LogConstructor(nil).Info("Starting workers-pre", "worker count", c.MaxConcurrentReconciles)
 		// Launch workers to process resources
 		c.LogConstructor(nil).Info("Starting workers", "worker count", c.MaxConcurrentReconciles)
 		wg.Add(c.MaxConcurrentReconciles)
 		for i := 0; i < c.MaxConcurrentReconciles; i++ {
-			go func() {
+			go func(j int) {
 				defer wg.Done()
 				// Run a worker thread that just dequeues items, processes them, and marks them done.
 				// It enforces that the reconcileHandler is never invoked concurrently with the same object.
-				for c.processNextWorkItem(ctx) {
+				for c.processNextWorkItem(ctx, j) {
 				}
-			}()
+			}(i)
 		}
 
 		c.Started = true
@@ -252,12 +252,13 @@ func (c *Controller) Start(ctx context.Context) error {
 
 // processNextWorkItem will read a single work item off the workqueue and
 // attempt to process it, by calling the reconcileHandler.
-func (c *Controller) processNextWorkItem(ctx context.Context) bool {
+func (c *Controller) processNextWorkItem(ctx context.Context, j int) bool {
 	obj, shutdown := c.Queue.Get()
 	if shutdown {
 		// Stop working
 		return false
 	}
+	c.LogConstructor(nil).Info("worker pool", "worker ID", j)
 
 	// We call Done here so the workqueue knows we have finished
 	// processing this item. We also must remember to call Forget if we
